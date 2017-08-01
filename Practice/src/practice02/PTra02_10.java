@@ -21,7 +21,7 @@ public class PTra02_10 {
 		 * ※ 日本円には小数点がありませんので、整数の値で出力してください
 		 * ※ プログラムは何行書いても良いです
 		 */
-
-
+        int syozikin =(int)(moneyInHand-(coffee*2+snack)*1.08);
+        System.out.println(syozikin);
 	}
 }

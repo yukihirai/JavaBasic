@@ -12,9 +12,9 @@ public class PTra02_03 {
 		System.out.println(num1);
 
 		// ★ プログラムを修正して、num2に140が入るようにしてください
-		int num2 = 20 + num1 * 2;
+		int num2 = (20 + num1) * 2;
 
-		// ★ 以下のプログラムで120が出力されるようにしてください
+		// ★ 以下のプログラムで140が出力されるようにしてください
 		System.out.println(num2);	// ※※ この行は修正しないでください
 	}
 }

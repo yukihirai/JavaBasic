@@ -7,13 +7,25 @@
 package practice18;
 
 public class PTra18_03 {
+
+	/*
+	 * PTra19_02で作成したPlayerクラスを使用します
+	 */
+
 	public static void main(String[] args) {
 
 		/*
-		 * ★ file/Sentence.txtに記述されている内容の中から、全角スペースが含まれているもののみを出力してください
-		 *
-		 * 	※ 全角スペースの判定には、正規表現を使ってみてください
+		 * ①
+		 * ★ file/BestElevenCandidate.csvの内容を取得し、１行毎にPlayerインスタンスに情報を格納してください
+		 * ★ ArrayListを作成して、Playerインスタンスを格納してください
 		 */
+
+
+		// ★ ①のArrayListの中から"レアル・マドリード", "バルセロナ"の選手を除外してください
+
+
+		// ★ 削除後のArrayListの中身を全件出力してください
+
 
 	}
 }

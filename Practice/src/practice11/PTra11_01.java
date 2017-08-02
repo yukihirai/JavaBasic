@@ -11,10 +11,10 @@ public class PTra11_01 {
 
 		/*
 		 * 以下のプログラムではコンパイルエラーが起きてしまいます
-		 * ★ コンパイルが通るように修正してください
+		 * ★ コンパイルが通るように修正してください(引数3つコンストラクタを利用すること)
 		 */
 		Book book = new Book();
-		book.tilte = "スッキリわかるJava入門";
+		book.title = "スッキリわかるJava入門";
 		book.author = "中山清喬／国本大悟";
 		book.price = 2600;
 		book.pageSize = 657;

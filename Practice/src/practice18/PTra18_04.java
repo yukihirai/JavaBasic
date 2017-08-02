@@ -7,22 +7,21 @@
 package practice18;
 
 public class PTra18_04 {
+
+	/*
+	 * PTra19_02で作成したPlayerクラスを使用します
+	 */
+
 	public static void main(String[] args) {
 
-		// ★ ①file/Sentence.txtに記述されている内容の中から、ランダムで１行抜き出して出力してください
+		/*
+		 * ①
+		 * ★ file/BestElevenCandidate.csvの内容を取得し、１行毎にPlayerインスタンスに情報を格納してください
+		 * ★ ArrayListを作成して、Playerインスタンスを格納してください
+		 */
 
 
-		// ★ ②ユーザの入力待ち状態とします
-
-
-		// ★ ③入力された文章と、抜き出した文章が等しいかチェックします
-
-
-		// ★ ③-１等しくない場合は、②を繰り返してください
-
-
-		// ★ ③-２等しい場合は、①からを３回繰り返してください
-
+		// ★ ①のArrayListの中からGK1名、DF4名、MF4名, FW2名をランダムで出力してください
 
 	}
 }

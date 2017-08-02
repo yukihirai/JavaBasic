@@ -6,12 +6,18 @@
  */
 package practice15.ptra15;
 
+import practice15.common.Java2Month;
+import practice15.common.Room;
+
 public class PTra15_02 {
+	public static void main(String[] args) {
 
-	/*
-	 * common.StudentPクラスを作成してください
-	 *
-	 * PTra15_01で作成したStudentクラスをCourseの多態性を使って修正してください
-	 */
+		Room room = new Java2Month();
 
+		// roomに格納されたJava2MonthインスタンスのgetCurriculumメソッドを呼び出してください
+
+
+		// 取得したカリキュラム情報を全て出力してください
+
+	}
 }

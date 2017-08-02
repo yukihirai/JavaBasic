@@ -6,31 +6,22 @@
  */
 package practice15.ptra15;
 
+import practice15.common.Course;
+import practice15.common.DBCourse;
+import practice15.common.JavaCourse;
+
 public class PTra15_01 {
 
-	/*
-	 * PTra14_04、PTra14_05と同様に、JavaCourseクラスとDBCourseクラスを作成してください
-	 * ※　コピーしてきても良いです
-	 */
+	public static void main(String[] args) {
 
-	/*
-	 * common.Studentクラスを作成してください
-	 *
-	 * フィールド
-	 * 		userId	:	int
-	 * 		userNm	:	String
-	 * 		mail	:	String
-	 * 		pass	:	String
-	 * 		jcourse	:	JavaCourse
-	 * 		dcourse	:	DBCourse
-	 *
-	 * メソッド
-	 * 		各アクセサ
-	 * 		※　jcourse、dcourseはいずれか片方しか持てないようsetメソッドにチェックをいれてください
-	 *
-	 * 		playELearning
-	 * 			戻り値なし、引数なし
-	 * 			jcourseかdcourseのインスタンスを持っている方のgetCourseUnitで取得した結果を全て出力してください
-	 */
+		JavaCourse jCourse = new JavaCourse();
+		DBCourse dbCourse = new DBCourse();
+
+		// ★ Course[	]の配列に jcourse と dbCourse のインスタンスを代入してください。
+
+		for (Course course : courseList) {
+			System.out.println(course.getCourseName());
+		}
+	}
 
 }

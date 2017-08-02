@@ -35,6 +35,17 @@ public class PTra03_08 {
 		 *
 		 * ※ プログラムは何行書いても良いです
 		 */
-
+         if (num==1) {
+        	 num=150;
+        	 System.out.println("残金は、"+(money-num)+"円です");
+        	 
+         }else if (num==2) {
+        	 num=160;
+        	 System.out.println("残金は、"+(money-num)+"円です");
+        	 
+         }else if(num==3){
+        	 num=200;
+         System.out.println("残金は、"+(money-num)+"円です");
+         }
 	}
 }

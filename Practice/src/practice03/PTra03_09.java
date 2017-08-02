@@ -27,25 +27,25 @@ public class PTra03_09 {
 		if (num<0 || num>=7) {
 			System.out.println("0～6までの整数を入力してください");
 		
-		}else if (num<=0 && num>=0) {
+		}else if (num==0) {
 		   System.out.println("日曜");
 		   
-		}else if (num<=1) {
+		}else if (num==1) {
 			System.out.println("月曜");
 		
-		}else if (num<=2) {
+		}else if (num==2) {
 			System.out.println("火曜");
 			
-		}else if (num<=3) {
+		}else if (num==3) {
 		    System.out.println("水曜");
 		    
-		}else if (num<=4) {
+		}else if (num==4) {
 			System.out.println("木曜");
 			
-		}else if (num<=5) {
+		}else if (num==5) {
 			System.out.println("金曜");
 		
-		}else if (num<=6) {
+		}else if (num==6) {
 			System.out.println("土曜");
 		}
 	}

@@ -14,13 +14,13 @@ public class PTra07_06 {
 
 		// ★ PTra07_05.javaで作成したランダム値が入った配列arrayを作成してください
 		int[] array = new int[5];
-		
+
         for(int i=0; i<array.length; i++) {
             int limitNumber=100000;
             int random=0;
         	random = new java.util.Random().nextInt(limitNumber);
             array[i]=random;
-          
+
         }
 		System.out.println("配列の中身を小さい順に並び替えます");
 

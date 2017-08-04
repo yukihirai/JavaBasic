@@ -16,5 +16,12 @@ public class PTra09_02 {
 
 		// ★ ランダムに並び替えた後の配列を前から順に全て表示してください
 
+		String[] x = practice09.util.Util.shuffleArray(array);
+		
+		for(String y : x) {
+		
+		System.out.println(y);
+	
+		}
 	}
 }

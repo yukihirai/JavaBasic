@@ -38,6 +38,9 @@ public class PTra03_04 {
         	
         }else if (num%4==0){
         	System.out.println(num+"年はうるう年です。");
+        
+        }else {
+        	System.out.println(num + "年はうるう年ではありません");
         }
 	}
 }

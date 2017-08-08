@@ -48,27 +48,31 @@ public class PTra10_05 {
 		 * ※n：runメソッドを実行した回数, xは残りのガソリンの数です
 		 */
 
-		
+
 		int progress = 0;
-		
+
 		int count = 0;
-		
+
 		int n = 0;
-		
+
 		while(distance>=progress) {
+
+			n = car.run();
+ 
+			if(n==-1) {
+				break;
+			}
 			
-			car.run(n);
-			System.out.println(n);
 			progress+=n;
-		
+
 			count++;
-		}	
-			
-		if (progress>0) {
+		}
+
+		if (progress<distance) {
 				System.out.println("目的地に到達できませんでした");
-			
-			    }else
-		        System.out.println("目的地まで"+ count + "時間かかりました。"+ "残りのガソリンは、"+ (car.gasoline-count) + "リットルです");
-		
+
+	    }else {
+		        System.out.println("目的地まで"+ count + "時間かかりました。"+ "残りのガソリンは、"+ (car.gasoline) + "リットルです");
+	    }
 	}
 }

@@ -19,8 +19,8 @@ public class PTra13_07 {
 	public static void main(String[] args) {
 
 		// ★ SuperHeroインスタンスとSlimeインスタンスを作成し、それぞれの名前に"勇者（装備あり）", "スライム"を設定してください
-		SuperHero superhero = new SuperHero();
-        superhero.setName("勇者(装備あり)");
+		SuperHero superHero = new SuperHero();
+        superHero.setName("勇者(装備あり)");
 
         Slime slime = new Slime();
         slime.setName("スライム");
@@ -29,8 +29,7 @@ public class PTra13_07 {
         Item item = new Item("こんぼう",4);
 
 		// ★ 作成したItemインスタンスをSuperHeroに持たせてください
-        superhero.setEquipment(item);
-        superhero.getEquipment().getAdditionalDamage();
+        superHero.setEquipment(item);
 
 		/*
 		 * ★ SuperHeroとSlimeを、どちらかが体力０になるまで戦わせます
@@ -39,6 +38,25 @@ public class PTra13_07 {
 		 * 上記を繰り返し行います
 		 */
 
+        while(true) {
+        	int hattack  = superHero.attack();
+
+        	boolean isSlimeDeath = slime.damage(hattack);
+
+        	if(isSlimeDeath) {
+        		System.out.println(superHero.getName() + "は" + slime.getName() + "との戦闘に勝利した");
+        		break;
+        	}
+
+        	int sattack = slime.attack();
+
+        	boolean isHeroDeath = superHero.damage(sattack);
+
+        	if(isHeroDeath) {
+        		System.out.println(slime.getName() + "は" + superHero.getName() + "との戦闘に勝利した");
+        		break;
+        	}
+        }
 
 		// ★ 勝利した方の出力を行ってください。「○○は■■との戦闘に勝利した」
 

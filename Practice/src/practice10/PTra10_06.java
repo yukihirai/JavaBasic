@@ -13,14 +13,16 @@ public class PTra10_06 {
 	/*
 	 * PTra10_05で作成したCarクラスを使用します
 	 */
-
+	
+	
 	public static void main(String[] args) {
 
 		/*
 		 * ★ carインスタンスを3件作成し、それぞれの色、ガソリンを入力して決定してください
 		 * ★ 各carインスタンスのrunメソッドを実行して、200km先の目的地に到達した順位を出力してください
-		 */
-
+		 */		
+		
+		
 		final int distance = 200;
 		
 		int progress = 0;

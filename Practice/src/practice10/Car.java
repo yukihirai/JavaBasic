@@ -7,6 +7,8 @@ public class Car {
 	String color;
 
 	int gasoline = 0;
+	
+	int count = 0;
 
 	int run() {
 

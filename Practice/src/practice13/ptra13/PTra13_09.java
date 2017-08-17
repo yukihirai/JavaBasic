@@ -36,36 +36,28 @@ public class PTra13_09 {
 	public static void main(String[] args) {
 
 		// ★ 定数で定義されている各データを使用して、Employeeインスタンスを３つ作成してください
-		for(String[] quaterdata : QUATERDATA) {
-			for(String quater : quaterdata) {
-			}
+		Employee[] employees = new Employee[NAMEDATA.length];
+		
+		for(int i=0; i< NAMEDATA.length ; i++) {
+			
+		
+			employees[i] = new Employee();
+			employees[i].setUserNm(NAMEDATA[i]);
+			employees[i].setMail(MAILDATA[i]);
+			employees[i].setPassword(PASSDATA[i]);
+			employees[i].setDepartmentNm(QUATERDATA[0][i]);
+			employees[i].setDepartmentCnt(Integer.parseInt(QUATERDATA[1][i]));
 		}
-		int x = Integer.parseInt(QUATERDATA[1][0]);
-		int y = Integer.parseInt(QUATERDATA[1][1]);
-		int z = Integer.parseInt(QUATERDATA[1][2]);
+			
+		for(Employee e : employees) {
+			System.out.println(e.getUserNm());
+			System.out.println(e.getMail());
+			System.out.println(e.getPassword());
+			System.out.println(e.getDepartmentNm());
+			System.out.println(e.getDepartmentCnt());
+			System.out.println("-------------------------------");
+		}
+	
 		
-		
-		Employee employee1 = new Employee();
-           employee1.setUserNm(NAMEDATA[0]);
-           employee1.setMail(MAILDATA[0]);
-           employee1.setPassword(PASSDATA[0]);
-           employee1.setDepartmentNm(QUATERDATA[0][0]);
-           employee1.setDepartmentCnt(x);
-           
-           
-        Employee employee2 = new Employee();
-           employee2.setUserNm(NAMEDATA[1]);
-           employee2.setMail(MAILDATA[1]);
-           employee2.setPassword(PASSDATA[1]);
-           employee2.setDepartmentNm(QUATERDATA[0][1]);
-           employee2.setDepartmentCnt(y);
-           
-       
-           Employee employee3 = new Employee();
-           employee3.setUserNm(NAMEDATA[1]);
-           employee3.setMail(MAILDATA[1]);
-           employee3.setPassword(PASSDATA[1]);
-           employee3.setDepartmentNm(QUATERDATA[0][2]);
-           employee3.setDepartmentCnt(z);
-	}
+	}	
 }

@@ -66,11 +66,11 @@ public class PTra04_05 {
             	   break;
                 }
                 else if(myHand==1) {
-            	   System.out.println("あなたの負け");
+            	   System.out.println("あいこです");
             	   continue;
                 }
                 else if(myHand==2) {
-            	   System.out.println("あいこです");
+            	   System.out.println("あなたの負け");
             	   continue;
                 }
 
